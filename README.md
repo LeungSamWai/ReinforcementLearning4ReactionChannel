@@ -14,24 +14,25 @@ We propose a reinforcement learning based method to identify important configura
 Optimizing measurement
 │   README.md    <-- You are here
 │
-│   qiskit-vqe-random_assignment.py  ---> Random assignment
-│   qiskit-vqe-uniform_assignment.py ---> Uniform assignment
-│   qiskit-vqe-variance_minimized.py ---> VMSA
-│   qiskit-vqe-variance_preserved.py ---> VRSR
+│   env.py  ---> Define a RL environment
+│   TD3.py  ---> Define the actor and critic networks
+│   utils.py --> Define the replay-buffer
+│   train.py --> Main file for training
 │   
-│   readresult.ipynb ---> Result visualization
+│   visualize_action.ipynb ---> Visualize the learned actor function
 ```
 ## How to run the code
-There are three args: 
+There are some key args: 
 ```commandline
---trial # the experiment number, which uses to name the result
---shots # Total number of shots for each iteration
---std_shots # Number of shots used to estimate the standard deviation for each clique
+--maxstep  # number of steps for each episode
+--maxepisode # number of episodes
+--bound # stop episode if reach low prob. area (i.e., exp(bound))
+--noise # extra noise to add to action to promote exploration
 ```
 ### Our strategies:
 #### Variance-Minimized Shot Assignment:
 ```commandline
-python qiskit-vqe-variance_minimized.py --trial 1 --shots 240 --std_shots 24
+python train2.py --gpu_id 0 --env_name Beta6p67 --reward_type log_product --gamma 1 --maxstep 15 --beta 6.67 --T 2 --bound -35 --maxepisode 1000 --noise 0.2
 ```
 
 ## Citing this paper
