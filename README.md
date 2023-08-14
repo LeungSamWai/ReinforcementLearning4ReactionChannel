@@ -1,14 +1,10 @@
 # Probing reaction channels via reinforcement learning
 By A, B, C, D and E
 ## Introduction
-Consolidating Hamiltonian terms into cliques allows 
-simultaneous measurement and reduces shots, but prior knowledge of each clique, 
-like amplitudes, is very limited. To tackle this challenge, we propose two novel shot assignment strategies based 
-on the standard deviation estimation to refine the convergence of VQE and reduce the 
-shot requirement. These strategies address measurement challenges in two distinct 
-scenarios: when shots are overallocated or underallocated.
+This repo provides implementation of the paper "Probing reaction channels via reinforcement learning" [arxiv](https://arxiv.org/pdf/2305.17531.pdf). 
 
-![image](quantum.png)
+
+![image](RLconnetiveconf.png)
 
 ## Code structure
 ```commandline
