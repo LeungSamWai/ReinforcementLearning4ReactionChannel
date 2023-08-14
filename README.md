@@ -1,7 +1,7 @@
 # Probing reaction channels via reinforcement learning
 By A, B, C, D and E
 
-This repository provides implementation of the paper "Probing reaction channels via reinforcement learning" [arxiv](https://arxiv.org/pdf/2305.17531.pdf) on identifying the connective configuration with reinforcement learning (specially TD3). 
+This repository provides implementation of the paper "Probing reaction channels via reinforcement learning" [arxiv](https://arxiv.org/pdf/2305.17531.pdf) on identifying the connective configuration with reinforcement learning (especially TD3). 
 
 ## Introduction
 
@@ -32,7 +32,7 @@ There are some key args:
 ### Our strategies:
 #### Variance-Minimized Shot Assignment:
 ```commandline
-python train2.py --gpu_id 0 --env_name Beta6p67 --reward_type log_product --gamma 1 --maxstep 15 --beta 6.67 --T 2 --bound -35 --maxepisode 1000 --noise 0.2
+python train.py --gpu_id 0 --env_name Beta6p67 --reward_type log_product --gamma 1 --maxstep 15 --beta 6.67 --T 2 --bound -35 --maxepisode 1000 --noise 0.2
 ```
 
 ## Citing this paper
