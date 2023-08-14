@@ -29,8 +29,7 @@ There are some key args:
 --bound # stop episode if reach low prob. area (i.e., exp(bound))
 --noise # extra noise to add to action to promote exploration
 ```
-### Our strategies:
-#### Variance-Minimized Shot Assignment:
+### Script
 ```commandline
 python train.py --gpu_id 0 --env_name Beta6p67 --reward_type log_product --gamma 1 --maxstep 15 --beta 6.67 --T 2 --bound -35 --maxepisode 1000 --noise 0.2
 ```
