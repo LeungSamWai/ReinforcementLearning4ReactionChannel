@@ -1,5 +1,5 @@
 # Probing reaction channels via reinforcement learning
-By A, B, C, D and E
+By Liang, Senwei and Singh, Aditya N and Zhu, Yuanran and Limmer, David T and Yang, Chao
 
 This repository provides implementation of the paper "Probing reaction channels via reinforcement learning" [arxiv](https://arxiv.org/pdf/2305.17531.pdf) on identifying the connective configuration with reinforcement learning (especially TD3). 
 
